@@ -10,13 +10,12 @@
     <header>
         <h1>Projetos</h1>
         <div>
-            <button>Apagar projeto</button>
-            <button class="button">Novo projeto</button>
+            <button onclick="myToken = prompt('Token de conta do github'); localStorage.setItem('token', myToken)">Configurar token</button>
+            <button class="button" onclick="registerProject(prompt('Nome do projeto'), prompt('Descrição do projeto'))">Novo projeto</button>
         </div>
     </header>
 
-    <div id="projetos" class="card">
-        <h1>Projeto ainda em desenvolvimento, peraê apressado</h1>
-    </div>
+    <div id="projetos" class="card"></div>
+    <script src="projects.js"></script>
 </body>
 </html>
